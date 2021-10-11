@@ -14,25 +14,8 @@ body {
     overflow-x: hidden;
 }
 
-.quick-actions-container {
+.nav-contents {
     width: 100%;
-    height: 10vh;
-}
-
-.contact-actions-wrapper {
-    background: transparent;
-    width: 30%;
-    height: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-container {
-    width: 800%;
-    height: 15vh;
     display: flex;
     justify-content: space-between;
     background: transparent;
@@ -42,5 +25,34 @@ body {
     width: 100%;
     height: 100vh;
     background: url("/img/landing-bg.jpg")no-repeat center;
+    background-size: cover;
+}
+
+.tagline-container {
+    width: 100%;
+    height: 20vh;
+}
+
+.benefits-container {
+    padding: 2rem;
+}
+
+.benefits-wrapper {
+    padding: 2rem;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.what-we-do-container {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+}
+
+.what-we-do-img {
+    background: url("/img/wwd.bg.jpg") no-repeat center;
     background-size: cover;
 }
