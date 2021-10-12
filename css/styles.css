@@ -45,14 +45,3 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
-.what-we-do-container {
-    width: 100%;
-    height: 100vh;
-    padding: 4rem;
-}
-
-.what-we-do-img {
-    background: url("/img/wwd.bg.jpg") no-repeat center;
-    background-size: cover;
-}
