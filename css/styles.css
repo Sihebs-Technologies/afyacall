@@ -14,23 +14,67 @@ body {
     overflow-x: hidden;
 }
 
-.nav-contents {
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: .5rem;
+    height: 12vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
+    background: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item .active {
+    border-bottom: 3px solid #abce3d;
+}
+
+.nav-link {
+    border-bottom: 1px solid #8585859d;
 }
 
 .landing-page-container {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+    background: #fff;
+}
+
+.landing-desc-wrapper {
     background: url("/img/landing-bg.jpg")no-repeat center;
     background-size: cover;
+    height: 400px;
+}
+
+.landing-sub-title {
+    color: #fff;
+}
+
+.quick-call {
+    border: 1px solid #8585859d;
+    border-radius: 20px;
+}
+
+.landing-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: transparent;
+    width: 50%;
 }
 
 .tagline-container {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
+}
+
+.tagline-title {
+    font-weight: 700;
 }
 
 .benefits-container {
@@ -46,7 +90,7 @@ body {
     align-items: center;
 }
 
-.btn-primary {
+.btn-secondary {
     background: none;
     color: #131313fd;
     border: none;
@@ -56,6 +100,19 @@ body {
     transition: background .6s;
 }
 
-.btn-primary:hover {
-    background: green;
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background: #abce3d;
+    border: none;
+    outline: none;
+}
+
+.what-do-we-do-header {
+    width: 100%;
+    height: 30vh;
+}
+
+.what-do-we-do-container {
+    width: 100%;
+    height: 120vh;
 }
