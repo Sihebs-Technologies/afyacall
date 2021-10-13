@@ -45,3 +45,17 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
+.btn-primary {
+    background: none;
+    color: #131313fd;
+    border: none;
+    border-bottom: 1px solid #131313fd;
+    border-radius: 0;
+    transition: all ease .3s;
+    transition: background .6s;
+}
+
+.btn-primary:hover {
+    background: green;
+}
