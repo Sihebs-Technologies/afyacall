@@ -6,12 +6,12 @@
 
 html:focus-within {
     scroll-behavior: smooth;
-    font-size: 16px;
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
+    font-size: 14px;
 }
 
 #nav-bar {
@@ -40,10 +40,13 @@ body {
     border-bottom: 1px solid #8585859d;
 }
 
-.landing-page-container {
+.landing-page-container,
+.what-do-we-do-container,
+.how-it-works-container,
+.gallery-container,
+.benefits-container {
     width: 100%;
-    height: 120vh;
-    background: #fff;
+    height: 100%;
 }
 
 .landing-desc-wrapper {
@@ -66,11 +69,6 @@ body {
     font-weight: 700;
     background: transparent;
     width: 50%;
-}
-
-.tagline-container {
-    width: 100%;
-    height: 30vh;
 }
 
 .tagline-title {
@@ -107,12 +105,91 @@ body {
     outline: none;
 }
 
-.what-do-we-do-header {
+.what-do-we-do-header,
+.how-it-works-header {
     width: 100%;
     height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.what-do-we-do-container {
+.how-it-works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-container .latest-news-bg {
+    background: url("/img/latest-news-bg.jpg")no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.gallery-container .Our-team-bg {
+    background: url("/img/our-team-bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.gallery-container .services-bg {
+    background: url("/img/services-bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.latest-news-desc,
+.our-team-desc,
+.services-desc {
     width: 100%;
-    height: 120vh;
+    height: 100%;
+    background: rgba(11, 9, 32, 0.295);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    width: 100%;
+    height: 100%;
+    background: #1f393c;
+}
+
+#footer .quick-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer p {
+    color: rgba(255, 255, 255, 0.603);
+}
+
+#footer .quick-links a,
+#footer a {
+    color: rgba(255, 255, 255, 0.603);
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+.facebook-social,
+.twitter-social,
+.linkedin-social,
+.instagram-social {
+    width: 100%;
+}
+
+.facebook-social a:hover {
+    color: #fff;
+}
+
+.facebook-social i,
+.twitter-social i,
+.linkedin-social i,
+.instagram-social i {
+    color: #fff;
+    margin-right: .5rem;
 }
