@@ -12,6 +12,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     overflow-x: hidden;
     font-size: 14px;
+    color: #1f393c;
 }
 
 #nav-bar {
@@ -19,7 +20,7 @@ body {
     top: 0;
     z-index: 10;
     padding: .5rem;
-    height: 12vh;
+    height: 100%;
     width: 100%;
     background: #fff;
 }
@@ -43,10 +44,12 @@ body {
 
 .nav-item .active {
     border-bottom: 3px solid #abce3d;
+    font-weight: 600;
+    color: #1f393c;
 }
 
 .nav-link {
-    border-bottom: 1px solid #8585859d;
+    border-bottom: 1px solid #85858517;
 }
 
 .landing-page-container,
@@ -73,7 +76,7 @@ body {
     font-size: 40px;
     font-weight: 700;
     background: transparent;
-    width: 60%;
+    width: 50%;
 }
 
 .tagline-title {
@@ -102,14 +105,27 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: none;
     padding: 1rem;
+    padding: 1rem;
+    width: 200px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-basic {
+    font-size: 16px;
+}
+
+.btn-basic {
+    background: none;
+    border: 2px solid #1f393c;
+    padding: 1rem;
+    width: 150px;
 }
 
 .btn-secondary {
     background: none;
-    color: #131313fd;
-    border: none;
-    border-bottom: 1px solid #131313fd;
-    border-radius: 0;
+    color: #abce3d;
+    border: 2px solid #abce3d;
     transition: all ease .3s;
     transition: background .6s;
 }
@@ -117,8 +133,6 @@ body {
 .btn-secondary:hover,
 .btn-secondary:focus {
     background: #abce3d;
-    border: none;
-    outline: none;
 }
 
 .what-do-we-do-header,
@@ -220,18 +234,23 @@ body {
 
 .about-header,
 .pricing-header,
-.contacts-header {
+.contacts-header,
+.terms-header,
+.services-header {
     background: #abce3d;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1f393c, #abce3d);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1f393c, #abce3d);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2rem;
 }
 
 .about-header-links-wrapper,
 .pricing-header-links-wrapper,
-.contacts-header-links-wrapper {
+.contacts-header-links-wrapper,
+.terms-header-links-wrapper,
+.services-header-links-wrapper {
     width: 50%;
     height: 50px;
     background: tranparent;
@@ -244,7 +263,11 @@ body {
 .pricing-header-links-wrapper a,
 .pricing-header-links-wrapper i,
 .contacts-header-links-wrapper a,
-.contacts-header-links-wrapper i {
+.contacts-header-links-wrapper i,
+.terms-header-links-wrapper a,
+.terms-header-links-wrapper i,
+.services-header-links-wrapper a,
+.services-header-links-wrapper i {
     color: #fff;
     text-decoration: none;
 }
