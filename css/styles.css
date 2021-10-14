@@ -24,6 +24,15 @@ body {
     background: #fff;
 }
 
+.navbar {
+    background: #fff;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
 .navbar-toggler:focus {
     outline: none !important;
 }
@@ -50,13 +59,9 @@ body {
 }
 
 .landing-desc-wrapper {
-    background: url("/img/landing-bg.jpg")no-repeat center;
+    background: url("/img/landing-bg.png")no-repeat center;
     background-size: cover;
     height: 400px;
-}
-
-.landing-sub-title {
-    color: #fff;
 }
 
 .quick-call {
@@ -68,7 +73,7 @@ body {
     font-size: 40px;
     font-weight: 700;
     background: transparent;
-    width: 50%;
+    width: 60%;
 }
 
 .tagline-title {
@@ -86,6 +91,17 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.btn-primary {
+    background: #abce3d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f393c, #abce3d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f393c, #abce3d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    padding: 1rem;
 }
 
 .btn-secondary {
@@ -153,7 +169,12 @@ body {
 #footer {
     width: 100%;
     height: 100%;
-    background: #1f393c;
+    background: #abce3d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(-135deg, #1f393c, #abce3d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-135deg, #1f393c, #abce3d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #footer .quick-links {
@@ -192,4 +213,52 @@ body {
 .instagram-social i {
     color: #fff;
     margin-right: .5rem;
+}
+
+
+/* about page styles */
+
+.about-header,
+.pricing-header,
+.contacts-header {
+    background: #abce3d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f393c, #abce3d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f393c, #abce3d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.about-header-links-wrapper,
+.pricing-header-links-wrapper,
+.contacts-header-links-wrapper {
+    width: 50%;
+    height: 50px;
+    background: tranparent;
+    display: flex;
+    align-items: center;
+}
+
+.about-header-links-wrapper a,
+.about-header-links-wrapper i,
+.pricing-header-links-wrapper a,
+.pricing-header-links-wrapper i,
+.contacts-header-links-wrapper a,
+.contacts-header-links-wrapper i {
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-bg {
+    background: url("/img/latest-news-bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+
+/* pricing page styles */
+
+.card {
+    border-radius: 30px;
+    box-shadow: 0px 4px 40px #1f393c2d;
 }
