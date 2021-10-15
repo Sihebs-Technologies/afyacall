@@ -237,7 +237,8 @@ body {
 .contacts-header,
 .terms-header,
 .services-header,
-.blog-header {
+.blog-header,
+.privacy-header {
     background: #abce3d;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1f393c, #abce3d);
@@ -252,7 +253,8 @@ body {
 .contacts-header-links-wrapper,
 .terms-header-links-wrapper,
 .services-header-links-wrapper,
-.blog-header-links-wrapper {
+.blog-header-links-wrapper,
+.privacy-header-links-wrapper {
     width: 50%;
     height: 50px;
     background: tranparent;
@@ -271,7 +273,9 @@ body {
 .services-header-links-wrapper a,
 .services-header-links-wrapper i,
 .blog-header-links-wrapper a,
-.blog-header-links-wrapper i {
+.blog-header-links-wrapper i,
+.privacy-header-links-wrapper a,
+.privacy-header-links-wrapper i {
     color: #fff;
     text-decoration: none;
 }
