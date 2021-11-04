@@ -164,7 +164,7 @@ body {
 }
 
 .gallery-container .services-bg {
-    background: url("/img/services-bg.jpg") no-repeat center;
+    background: url("/img/services-bg.jpg") no-repeat top;
     background-size: cover;
     height: 400px;
 }
@@ -281,7 +281,7 @@ body {
 }
 
 .about-bg {
-    background: url("/img/latest-news-bg.jpg") no-repeat center;
+    background: url("/img/about-us.jpg") no-repeat center;
     background-size: cover;
     height: 400px;
 }
